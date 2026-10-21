@@ -1,4 +1,4 @@
-# High-Performance C++17 3D Game Engine & Subway Surfers Clone
+# Modulat C++17 3D Game Engine & Renderer
 
 ## Overview
 This repository serves as a technical overview and architectural breakdown of a custom, multi-platform 3D game engine built from scratch using modern **C++17** and **OpenGL**. The engine was designed with a data-oriented mindset to maximize hardware efficiency, concurrency, and render throughput—powering a fully functional *Subway Surfers* style 3D endless runner.
