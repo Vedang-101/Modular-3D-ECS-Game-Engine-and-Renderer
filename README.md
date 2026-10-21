@@ -18,6 +18,8 @@ This repository serves as a technical overview and architectural breakdown of a 
 
 ## Engine Architecture & Systems Design
 
+![Architecture Overview](architecture.png)
+
 ### 1. Data-Oriented ECS & Memory Layout
 To avoid pointer chasing and cache misses common in traditional object-oriented game engines, the engine uses a custom **Sparse Set ECS**:
 * **Component Storage:** Sparse array for entity lookup; dense array contiguous in memory for cache-efficient iteration during system execution.
