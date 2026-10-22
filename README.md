@@ -28,6 +28,7 @@ To avoid pointer chasing and cache misses common in traditional object-oriented 
 
 ### 2. High-Performance Skeletal Animation Pipeline
 ![Animation Demo](AnimationDemo.gif)
+
 The animation engine evaluates complex bone hierarchies and blend trees efficiently across high entity counts:
 1. **Parallel Animation Job System:** Animation clips, bone pose evaluations, and matrix interpolations (LERP/SLERP) are split across worker threads via a lock-free task queue.
 2. **Matrix Palette Upload:** Local bone matrices are transformed into world space and packed into GPU-accessible buffer textures (`samplerBuffer`).
@@ -40,6 +41,7 @@ The rendering subsystem uses an extensible **Render Graph** to manage render tar
 
 ### 4. Custom Physics & Concurrency
 ![Physics Demo](RollerBall.gif)
+
 * **Task-Graph Thread Pool:** Work-stealing/distributing thread pool architecture built on top of standard C++ atomics and condition variables for fine-grained task execution.
 * **Physics Solver:** Fixed timestep integration featuring narrow-phase sphere-plane collision detection, contact constraint resolution, and linear/angular impulse application.
 
